@@ -31,7 +31,7 @@
 
 <body>
 
-   <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -133,130 +133,59 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Scout Programs
+                <h1 class="page-header">Make a Reservation!
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
                     </li>
-                    <li class="active">Scout Programs</li>
+                    <li class="active">Reservation</li>
                 </ol>
-                <p> Looking for something different to do with your Scout Troop?  As You Wish has great options!  Whether you are looking for a creative meeting idea, a Girl Scout looking to fulfill the requirements of your Potter Badge or Business Owner Badge or a Boy Scout working on your Webelos Artist Explosion badge or Arrow of Light Elective, As You Wish has something for everyone!
-                </p>
             </div>
         </div>
         <!-- /.row -->
-        <hr>
 
-        <!-- Project One -->
+        <!-- Contact Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
-            <div class="col-md-5">
-                <br>
-                <br>
-                <a href="reservation.html">
-                    <img class="img-responsive img-hover" src="img/scout1.jpg" alt="">
-                </a>
+            <div class="col-md-8">
+                <h3>Please fill out your information</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <p> Please let us know when you would like to come and the number of people in your group. </p>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary" href="confirmation.html"><b>Send Reservation </b></button>
+                </form>
             </div>
-            <div class="col-md-7">
-                <h3>Brownie Potter Badge</h3>
-                <p>As You Wish will work with your troop to fulfill the requirements of the Brownie Potter Badge:
-                    <br>
-                    <b>Find some Pottery:</b> We will take a tour of our studio and point out and discuss all of the pottery we use in our daily lives.
-                    <br>
-                    <b>Get To Know Clay:</b> An explanation of what clay is and how to properly store and care for it.
-                    <br>
-                    <b>Make a Simple Pot:</b> We will make a pinch pot with their clay slab* <br>
-                    <b>Make an Art Piece:</b> We will make a simple sculpture with their clay slab* <br>
-                    <b>Paint and Glaze It:</b> We will learn about underglazes and overglazes, paint a six inch tile, overglaze it, and learn about the firing process. <br>
-                    <br>
-                    $12 per painter includes all supplies, glazing and firing, 6 inch tile and As You Wish souvenir patch.  Minimum of 6 painters.<br>
-                    <br>
-                    *Due to time constraints clay items will not be fired. Participants can take them home to dry or save the wet clay to work with at a later date.</p>
-                <a class="btn btn-primary" href="reservation.html"><b>Make reservation</b></i></a>
-            </div>
+
         </div>
         <!-- /.row -->
 
         <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-5">
-                <a href="reservation.html">
-                    <img class="img-responsive img-hover" src="img/scout2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Junior Owner Badge</h3>
-                <p>Attend the Junior Business Owner Badge Workshop conducted by As You Wish Owner, Lori Neff and fulfill all of the requirements to earn your badge. Watch our website and calendar for times and locations through out the year. 
-                <br>
-                <b>
-                <br>
-                We currently have a Junior Business Owner Badge scheduled for our Desert Ridge location on April 23.
-                </b>
-            </p>
-                <a class="btn btn-primary" href="reservation.html"><b>Make Reservation</b></i></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-5">
-                <br>
-                <a href="reservation.html">
-                    <img class="img-responsive img-hover" src="img/scout3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Webelos Art Explosion Badge</h3>
-                <h4>Arrow of Light Elective</h4>
-                <p>As You wish instructors will guide your troop through fulfilling the requirements of your Webelos Art Explosion Badge and/or Arrow of Light Elective including:
-                <br>
-                <br>
-                <b>
-                * Visit an art exhibit <br>
-                * Create Self Portraits <br>
-                * Use Clay to create a simple form <br>
-                * Create an object out of clay that can be fired, baked in the oven or air dried <br>
-                * Display your artwork in a pack, school or community art show <br>
-                </b>
-                <br>
-                <br>
-                $12 per painter includes all supplies, glazing and firing, 6 inch tile and As You Wish souvenir patch.  Minimum of 6 painters.
-            </p>
-                <a class="btn btn-primary" href="reservation.html"><b>Make Reservation</b></i></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-5">
-                <a href="reservation.html">
-                    <img class="img-responsive img-hover" src="img/scout4.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Creative Meetings</h3>
-                <p>Even if you aren’t working on a badge As You Wish is still a great place for a creative field trip! You can coordinate it with a badge project or just come in for some creative fun!  Either way, we have great rates for Scouts and are happy to work with you in planning your meeting or event.
-                    <br>
-                    <br>
-                <b> Paint with your troop at a reduced studio fee with a minimum of 6 painters <br>
-                    <br>
-
-                Scout Studio Fee – $3 per painter plus pottery of your choice. </b> </p>
-                <a class="btn btn-primary" href="reservation.html"> <b> Make Reservation</b></i></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
 
         <!-- Footer -->
     <footer>
@@ -298,6 +227,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
 </body>
 
