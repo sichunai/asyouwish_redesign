@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mommy & Me</title>
+   <title>Purchase</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- calendar -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,6 +28,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+      });
+      </script>
 </head>
 
 <body>
@@ -105,6 +115,11 @@
                         </ul>
                     </li>
                     
+                    <li>
+                        <a href="about.html">Cart</a>
+                    </li>
+
+
                      <div class="col-sm-3 col-md-3 pull-right">
                         <form class="navbar-form" role="search">
                         <div class="input-group">
@@ -122,79 +137,120 @@
         <!-- /.container -->
     </nav>
 
-    </header>
-
     <!-- Page Content -->
     <div class="container">
-        <hr>
-        <center>
-        <img class="img-responsive img-hover" src="img/mommy.jpg" alt="">
-        </center>
-        <h3> Mommy & Me </h3>
-        <p> Our Mommy and Me Classes are designed for parent and child to work together.  All of our classes usually focus around a handprint or footprint theme and are best for the toddler/pre-school age group.    Our Mommy and Me classes are a great way to spend a creative morning together and have a beautiful keepsake of your child’s hand or foot print when you are done!
-        </p>
-        
-        <!-- Marketing Icons Section -->
+
+        <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
-                
+                <h1 class="page-header">Checkout!
                 </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>4/30/2016</h4>
-                    </div>
-                    <div class="panel-body">
-                        <center>
-                             <h6> I Love Mom Handpring Plate</h6>
-                        <img class="img-responsive img-hover" src="img/mommy2.png" alt="">
-                       
-                        <br>
-                        <a href="purchase.html" class="btn btn-default">Purchase</a>
-                    </center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>05/14/2016</h4>
-                    </div>
-                    <div class="panel-body">
-                        <center>
-                             <h6>Read and Paint - What Does The Fox Say?</h6>
-                        <img class="img-responsive img-hover" src="img/mommy1.png" alt="">
-                        <br>
-                        <a href="purchase.html" class="btn btn-default">Purchase</a>
-                    </center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>06/04/2016</h4>
-                    </div>
-                    <div class="panel-body">
-                        <center>
-                        <h6>Mommy and Me Fingerprint Frame</h6>
-                        <img class="img-responsive img-hover" src="img/mommy3.png" alt="">
-                        <br>
-                        <a href="purchase.html" class="btn btn-default">Purchase</a>
-                    </center>
-                    </div>
-                </div>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Checkout</li>
+                </ol>
             </div>
         </div>
         <!-- /.row -->
 
+        <!-- Contact Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Please fill out your information</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name * </label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+
+                    <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Address *</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your address">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Town/City * </label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your city">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>State *</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your state">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Zip *</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your Zipcode">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+
+                        Location for Artwork:
+
+                        <select>
+                              <option value="volvo">Location</option>
+                              <option value="saab">Chandler</option>
+                              <option value="opel">Awahtukee</option>
+                              <option value="audi">Scottsdale</option>
+                         </select>
+  
+
+
+                    </p>
+                    <br>
+
+                    <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Credit Card # </label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary" href="confirmation.html"><b>Send Purchase! </b></button>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.row -->
 
         <hr>
-
-
-
 
         <!-- Footer -->
     <footer>
@@ -232,11 +288,12 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 </body>
 
 </html>
